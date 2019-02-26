@@ -1,0 +1,32 @@
+net: "ucf101_res152/temporal_ResNet_152_train_val.prototxt"
+
+# testing parameter
+test_iter: 15200
+test_interval: 2000
+test_initialization: true
+
+# output
+display: 20
+average_loss: 20
+#snapshot: 1000
+snapshot_prefix: "models/ucf101_flow_res152_split1"
+debug_info: false
+
+# learning rate
+base_lr: 0.0001
+lr_policy: "multistep"
+gamma: 0.1
+stepvalue: [20000, 32000]
+max_iter: 40000
+iter_size: 1
+
+# parameter of SGD
+momentum: 0.9
+weight_decay: 0.0005
+clip_gradients: 20
+
+# GPU setting
+solver_mode: GPU
+device_id: [0,1,2,3,4,5,6,7]
+richness: 200
+

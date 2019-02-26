@@ -1,0 +1,2 @@
+/media/amax/82293848-43b8-4cb6-91e1-e302a7ad7ea6/Masters/baixue/temporal-segment-networks/lib/caffe-action/examples/images/fish-bike.jpg
+/media/amax/82293848-43b8-4cb6-91e1-e302a7ad7ea6/Masters/baixue/temporal-segment-networks/lib/caffe-action/examples/images/cat.jpg
