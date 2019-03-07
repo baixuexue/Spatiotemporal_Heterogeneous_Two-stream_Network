@@ -1,5 +1,5 @@
 # Spatiotemporal_Heterogeneous_Two-stream_Network
-We follow the guidance provided by TSN to prepare the data. Please refer to the TSN repository for guidance. Here we only provide the additional details of our Spatiotemporal_Heterogeneous_Two-stream_Network.
+
  <br>
 ## Preparation<br>
 1. Install opencv2.4.13. <br>
@@ -16,6 +16,7 @@ We follow the guidance provided by TSN to prepare the data. Please refer to the 
     python test.py ucf101 1 rgb PATH spatiotemporal_heterogeneous/spatial_ResNet_101_deploy.prototxt \   <br>
     models/ucf101_res101_rgb_split1_iter_36000.caffemodel --num_worker 4 --save_scores NPZ_NAME <br>
 where PATH is the path of RGB and optical flow image and NPZ_NAME is the filename of the scores. <br>
+4. python fuse_scores.py spatial.npz temporal.npz --score_weights 1 1.5
 
 ## Reference <br>
 Wang L, Xiong Y, Wang Z, et al. Temporal segment networks: Towards good practices for deep action recognition[C]//European conference on computer vision. Springer, Cham, 2016: 20-36. <br>
