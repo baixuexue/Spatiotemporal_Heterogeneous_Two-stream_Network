@@ -2,7 +2,7 @@
 ## Preparation<br>
 1. Install opencv2.4.13. <br>
 2. Install caffe：We have attached a modified version of [caffe](https://github.com/yjxiong/caffe) <br>
-   Please compile our modified version of caffe-action/ with cmake and openmpi according to [TSN](https://github.com/yjxiong/temporal-segment-networks). <br>
+   Please compile our modified version of caffe-action/ with cmake and openmpi. <br>
 3. Download UCF101 and/or HMDB51 datasets. <br>
 4. Follow the guidance of [dense_flow](https://github.com/yjxiong/dense_flow) to extract optical flow. <br>
 5. To build the file lists by running :python build_file_list.py ucf101 PATH(the path of RGB and optical flow image) --shuffle <br>
